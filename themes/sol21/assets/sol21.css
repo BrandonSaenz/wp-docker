@@ -1,0 +1,117 @@
+.w100{width: 100%;}
+    .px{padding-left: 10% !important; padding-right: 10% !important;}
+    .mx{margin-left: 10% !important; margin-right: 10% !important;}
+    .px-producto{
+        padding-left: 2% !important;
+        padding-right: 1% !important;
+    }
+    @font-face {
+        font-family: Didot;
+        src: url('../Didot LT Std Bold.otf');
+    }
+    .font-sol-leon{
+        font-size: 10.41vw; font-family: Didot;
+        padding-left: 19%;
+        padding-top: 10%;
+        line-height: 11.04vw;
+    }
+    .font-title, .font-title-producto{
+        font-size: 3.2vw; font-family: 'Montserrat'; font-weight: 600; padding-top: 4%; padding-bottom: 4%;
+    }
+    .font-title-producto{font-size: 1.7vw; text-transform: uppercase;}
+    .font-body, .font-body-producto{
+        font-size: 1.3vw; font-family: 'Montserrat'; font-weight: 600; text-align: justify; line-height: 1.82vw;
+    }
+    .font-body-producto{font-size: 1.1458vw; line-height: 1.71vw; text-align: left;}
+
+    #menu{background-color: black; height: 4vw;}
+
+    #menu li a{font-family: 'Montserrat'; text-transform: uppercase; font-weight: 500; font-size: 1.2vw;}
+
+    .height-nav{height: 4vw;}
+
+    .div-center {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-logo {
+        width: 20vw; height: 4vw; position: absolute !important;
+    }
+
+    .width-img{width: 3vw; height: auto;}
+
+    #productos{
+        margin-left: 8.5%;
+        margin-right: 8.5%;
+        padding-top: 3vw;
+        padding-bottom: 5vw;
+        width: 82%;
+    }
+
+    @media (min-width: 1920px) {
+        .font-sol-leon{font-size: 200px; line-height: 212px;}
+        .font-title{font-size: 61px;} .font-title-producto{font-size: 40px;}
+        .font-body{font-size: 25px; line-height: 35px;} .font-body-producto{font-size: 22px; line-height: 33px; text-align: left;}
+
+        #menu, .height-nav{height: 76.8px;}
+        #menu li a{font-size: 23px;}
+
+        .div-logo {
+            width: 384px; height: 76.8px; position: absolute !important;
+        }
+
+        .width-img{width: 57.6px;}
+    }
+
+    @media (max-width: 992px) {
+        #menu, .height-nav{height: 8vw !important;}
+        #menu li a{font-size: 23px !important;}
+        .width-img{width: 7vw !important;}
+
+        .div-logo {
+            width: 100% !important; height: 8vw !important; position: inherit !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #menu, .height-nav{height: 15vw !important;}
+        #menu li a{font-size: 23px !important;}
+        .width-img{width: 12vw !important;     margin-top: 3vw;}
+
+        .div-logo {
+            width: 100% !important; height: 12vw !important; position: inherit !important;
+        }
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: fit-content;
+    }
+    .swiper-pagination span {
+        background: black !important;
+    }
+    .swiper-pagination-bullet {
+        width: 1.5vw!important;
+        height: 1.5vw!important;
+        border-radius: 3vw!important;
+        margin: 0 1vw 0 1vw;
+    }
+
+    .div-firma{
+        width: 20vw;
+        padding-top: 4vw;
+        padding-bottom: 5vw;
+    }
+    .firma{
+        fill:none;
+        stroke:#282826;
+        stroke-miterlimit:10;
+        stroke-width: 14px;
+    }
+
+    .labio{
+        fill:#282826;
+    }

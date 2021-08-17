@@ -1,4 +1,9 @@
 <?php
+
+
+wp_enqueue_style('sol21',get_template_directory_uri() . '/assets/sol21.css', array(), '1.1', 'all');
+
+
 add_action( 'after_setup_theme', 'blankslate_setup' );
 function blankslate_setup() {
 load_theme_textdomain( 'blankslate', get_template_directory() . '/languages' );

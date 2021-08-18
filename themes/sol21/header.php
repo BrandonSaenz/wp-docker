@@ -20,7 +20,7 @@
 
 <div id="site-description"<?php if ( !is_single() ) { echo ' itemprop="description"'; } ?>><?php bloginfo( 'description' ); ?></div>
 </div>
-    <nav class="hide-on-med-and-down" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <nav style="" class="hide-on-med-and-down" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <div class="div-logo div-center">
             <img class="width-img" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/logo.png?v=1628872647">
         </div>
@@ -28,26 +28,18 @@
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu')); ?>
         </div>
     </nav>
-    <nav class="hide-on-large-only" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <nav style="" class="hide-on-large-only" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+            <div class="div-btn-menu div-center">
+                <i class="material-icons btn-menu">menu</i>
+            </div>
+        </a>
         <div class="div-logo div-center">
             <img class="width-img" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/logo.png?v=1628872647">
         </div>
     </nav>
 
     <ul id="slide-out" class="sidenav">
-        <li><div class="user-view">
-        <div class="background">
-            <img src="images/office.jpg">
-        </div>
-        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        <?php wp_nav_menu( array( 'theme_location' => 'main-menu')); ?>
     </ul>
 </header>

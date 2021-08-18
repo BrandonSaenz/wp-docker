@@ -6,6 +6,7 @@
     <h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -19,10 +20,10 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </header>
 <div class="entry-content" itemprop="mainContentOfPage">
-<script>
+    <script>
         const menu_main_menu = document.getElementById('menu-main_menu');
         menu_main_menu.classList.add('div-center');
-        </script>
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function(){
             M.AutoInit();
@@ -90,7 +91,10 @@
             </div>
             <img class="col s6" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/sol_leon.png?v=1628872648" alt="">
         </div>
-        <div class="row px">
+        <div class="row px sol-info">
+            <div class="info-gradient">
+                <div class="btn-more div-center"><i class="material-icons">add</i></div>
+            </div>
             <h4 class="font-title" id="biografia">BIOGRAFÍA</h4>
             <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
                 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
@@ -103,7 +107,10 @@
                 Is simply dummy text of the printing and typesetting industry. Lorem IpLetraset sheets containing Lorem Ipsum passages, and more 
                 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <div class="row px" style="padding-bottom: 2.5%;">
+        <div class="row px sol-info" style="padding-bottom: 2.5%;">
+            <div class="info-gradient">
+                <div class="btn-more div-center"><i class="material-icons">add</i></div>
+            </div>
             <h4 class="font-title" id="trayectoria">TRAYECTORIA</h4>
             <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
                 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
@@ -117,7 +124,10 @@
                 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <img class="row w100" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/modelos.png?v=1628872648" alt="">
-        <div class="row px" style="padding-bottom: 2.5%;">
+        <div class="row px sol-info" style="padding-bottom: 2.5%;">
+            <div class="info-gradient">
+                <div class="btn-more div-center"><i class="material-icons">add</i></div>
+            </div>
             <h4 class="font-title" id="prenda_moldeo">PRENDAS DE MOLDEO</h4>
             <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
                 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 

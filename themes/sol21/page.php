@@ -25,10 +25,12 @@
         menu_main_menu.classList.add('div-center');
     </script>
     <script>
+        var instances_sidenav;
         document.addEventListener("DOMContentLoaded", function(){
             M.AutoInit();
             createBtnMore();
             createProduct();
+            eventsMainItem();
             
             var swiper = new Swiper(".swiper-container", {
                 slidesPerView: 4,
@@ -47,6 +49,15 @@
                 clickable: true,
                 },
             });
+
+            var swiper = new Swiper(".swiper-container-small", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                el: ".swiper-pagination-small",
+                clickable: true,
+                },
+            });
         });
 
         function topPage(){
@@ -55,6 +66,14 @@
                 top: 0,
                 behavior: "smooth"
             });
+        }
+
+        function eventsMainItem() {
+            var menu_item=document.getElementsByClassName('menu-item');
+
+            for(var i=0; i<=menu_item.length-1; i++){
+                menu_item[i].firstChild.classList.add('sidenav-close');
+            }
         }
 
         function createBtnMore(){
@@ -97,7 +116,11 @@
         }
 
         function createProduct(){
-            var swiper_wrapper=document.querySelector('.swiper-wrapper');
+            
+            var swiper_wrapper_large=document.querySelector('.swiper-wrapper-large');
+            var swiper_wrapper_med=document.querySelector('.swiper-wrapper-med');
+            var swiper_wrapper_small=document.querySelector('.swiper-wrapper-small');
+
             var figure_img = document.getElementsByClassName('img-product-sol');
             var h2_title = document.getElementsByClassName('title-product-sol');
             var p_desc = document.getElementsByClassName('desc-product-sol');
@@ -106,7 +129,6 @@
             let div_img_elems=document.createElement('div'); div_img_elems.classList.add('container-img-product','hide')
 
             for(var i=0; i<=figure_img.length-1; i++){
-                console.log("Posicion del ciclo: "+i);
                 img_elems.push(figure_img[i].innerHTML);
                 div_img_elems.insertAdjacentHTML( 'beforeend', img_elems[i]);
 
@@ -119,8 +141,6 @@
                         p_desc[j].style.display="none";
 
                         let list_src_img=div_img_elems.getElementsByTagName('img');
-                        console.log("Data: "+list_src_img[j].src);
-                        console.log("TItle Product: "+h2_title[j].innerHTML);
         
                         let div_swiper_slide = document.createElement("div"); div_swiper_slide.classList.add("swiper-slide","col","s3","px-producto");
                         let h6_title=document.createElement("h6"); h6_title.classList.add("font-title-producto"); h6_title.innerHTML=h2_title[j].innerHTML;
@@ -131,9 +151,62 @@
                         div_swiper_slide.appendChild(p_desc_product);
                         div_swiper_slide.appendChild(img_product);
 
-                        swiper_wrapper.appendChild(div_swiper_slide);
+                        swiper_wrapper_large.appendChild(div_swiper_slide);
+                    }
+                }
+            }
 
-                        console.log("DIV: "+swiper_wrapper.outerHTML);
+            for(var i=0; i<=figure_img.length-1; i++){
+                img_elems.push(figure_img[i].innerHTML);
+                div_img_elems.insertAdjacentHTML( 'beforeend', img_elems[i]);
+
+                if(i>=figure_img.length-1){
+                    console.log(div_img_elems.innerHTML);
+
+                    for(var j=0; j<=figure_img.length-1; j++){
+                        figure_img[j].style.display="none";
+                        h2_title[j].style.display="none";
+                        p_desc[j].style.display="none";
+
+                        let list_src_img=div_img_elems.getElementsByTagName('img');
+        
+                        let div_swiper_slide = document.createElement("div"); div_swiper_slide.classList.add("swiper-slide","col","s3","px-producto");
+                        let h6_title=document.createElement("h6"); h6_title.classList.add("font-title-producto"); h6_title.innerHTML=h2_title[j].innerHTML;
+                        let p_desc_product=document.createElement("p"); p_desc_product.classList.add("font-body-producto"); p_desc_product.innerHTML=p_desc[j].innerHTML;
+                        let img_product=document.createElement("img"); img_product.classList.add("w100"); img_product.src=list_src_img[j].src;
+
+                        div_swiper_slide.appendChild(h6_title);
+                        div_swiper_slide.appendChild(p_desc_product);
+                        div_swiper_slide.appendChild(img_product);
+
+                        swiper_wrapper_med.appendChild(div_swiper_slide);
+                    }
+                }
+            }
+            for(var i=0; i<=figure_img.length-1; i++){
+                img_elems.push(figure_img[i].innerHTML);
+                div_img_elems.insertAdjacentHTML( 'beforeend', img_elems[i]);
+
+                if(i>=figure_img.length-1){
+                    console.log(div_img_elems.innerHTML);
+
+                    for(var j=0; j<=figure_img.length-1; j++){
+                        figure_img[j].style.display="none";
+                        h2_title[j].style.display="none";
+                        p_desc[j].style.display="none";
+
+                        let list_src_img=div_img_elems.getElementsByTagName('img');
+        
+                        let div_swiper_slide = document.createElement("div"); div_swiper_slide.classList.add("swiper-slide","col","s3","px-producto");
+                        let h6_title=document.createElement("h6"); h6_title.classList.add("font-title-producto"); h6_title.innerHTML=h2_title[j].innerHTML;
+                        let p_desc_product=document.createElement("p"); p_desc_product.classList.add("font-body-producto"); p_desc_product.innerHTML=p_desc[j].innerHTML;
+                        let img_product=document.createElement("img"); img_product.classList.add("w100"); img_product.src=list_src_img[j].src;
+
+                        div_swiper_slide.appendChild(h6_title);
+                        div_swiper_slide.appendChild(p_desc_product);
+                        div_swiper_slide.appendChild(img_product);
+
+                        swiper_wrapper_small.appendChild(div_swiper_slide);
                     }
                 }
             }
@@ -143,18 +216,18 @@
     <div style="width: 100vw; max-width: 1920px; margin: auto;">
         <div class="fixed-action-btn" onclick="topPage()">
             <a class="btn-floating btn-large black waves-effect waves-light">
-              <i class="large material-icons up-btn">keyboard_arrow_up</i>
+                <i class="large material-icons up-btn">keyboard_arrow_up</i>
             </a>
         </div>
         <div class="row">
             <div class="col s6">
                 <h1 class="font-sol-leon">SOL<br>LEÓN</h1>
                 <h1 class="font-sol-frase">
-                    <span class="comilla" style="margin-right: -0.6vw;">“</span>
+                    <span class="comilla">“</span>
                     <span style="font-weight: 600;">Por qué tú tambien mereces</span>
                     <br>
-                    <span style="font-weight: 700; font-style: italic; font-size: 2.35vw;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;una figura perfecta.</span>
-                    <span class="comilla" style="margin-left: -1.1vw;">”</span>
+                    <span class="frase-italic">&nbsp;&nbsp;&nbsp;una figura perfecta.</span>
+                    <span class="comilla">”</span>
                 </h1>
             </div>
             <img class="col s6" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/sol_leon.png?v=1628872648" alt="">
@@ -217,16 +290,36 @@
                 Is simply dummy text of the printing and typesetting industry. Lorem IpLetraset sheets containing Lorem Ipsum passages, and more 
                 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
-        <iframe class="px" style="width: 100%; height: 45vw;" src="https://www.youtube-nocookie.com/embed/l39i3-VG5Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="px frame-video" src="https://www.youtube-nocookie.com/embed/l39i3-VG5Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="swiper-container row hide-on-med-and-down" id="productos">
-            <div class="swiper-wrapper row">
+            <div class="swiper-wrapper swiper-wrapper-large row">
+            <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-container-med row hide-on-large-only" id="productos">
-            <div class="swiper-wrapper row">
+        <div class="swiper-container-med row hide-on-large-only hide-on-small-and-down" id="productos">
+            <div class="swiper-wrapper swiper-wrapper-med row">
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
             </div>
             <div class="swiper-pagination-med"></div>
+        </div>
+        <div class="swiper-container-small row hide-on-med-and-up" id="productos">
+            <div class="swiper-wrapper swiper-wrapper-small row">
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+            </div>
+            <div class="swiper-pagination-small"></div>
         </div>
         <div class="row div-center div-firma">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.58 512">

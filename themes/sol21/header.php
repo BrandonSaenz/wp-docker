@@ -9,6 +9,7 @@
 <?php wp_body_open(); ?>
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
+    <title>Sol León</title>
     <div id="branding" style="display: none;">
     <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
         <?php
@@ -40,6 +41,11 @@
     </nav>
 
     <ul id="slide-out" class="sidenav">
+        <li><a class="sidenav-close" href="#!">
+            <div class="div-left">
+                <span class="material-icons">clear</span><span class="font-family: 'Montserrat' !important;">&nbsp;&nbsp;CERRAR</span>
+            </div>
+        </a></li>
         <?php wp_nav_menu( array( 'theme_location' => 'main-menu')); ?>
     </ul>
 </header>

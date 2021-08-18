@@ -5,6 +5,12 @@
         padding-left: 2% !important;
         padding-right: 1% !important;
     }
+    nav .sidenav-trigger{
+        position: absolute !important;
+    }
+
+    .wp-block-coblocks-column{margin-bottom: 0px !important;}
+
     @font-face {
         font-family: Didot;
         src: url('../Didot LT Std Bold.otf');
@@ -25,6 +31,10 @@
     }
 
     .comilla{font-weight: 700; font-size: 4vw;}
+
+    .frase-italic{
+        font-weight: 700; font-style: italic; font-size: 2.5vw; text-align: center;
+    }
 
     .font-title, .font-title-producto{
         font-size: 3.2vw; font-family: 'Montserrat'; font-weight: 600; padding-top: 4%; padding-bottom: 4%;
@@ -48,6 +58,13 @@
         align-items: center;
     }
 
+    .div-left {
+        position: relative;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
     .div-logo {
         width: 20vw; height: 4vw; position: absolute !important;
     }
@@ -56,6 +73,8 @@
     .btn-menu{font-size: 5vw !important;}
 
     .width-img{width: 3vw; height: auto;}
+
+    .frame-video{width: 100%; height: 45vw;}
 
     #productos{
         margin-left: 8.5%;
@@ -78,22 +97,6 @@
 
     .up-btn{font-size: 53px !important;}
 
-
-    @media (min-width: 1920px) {
-        .font-sol-leon{font-size: 200px; line-height: 212px;}
-        .font-title{font-size: 61px;} .font-title-producto{font-size: 40px;}
-        .font-body{font-size: 25px; line-height: 35px;} .font-body-producto{font-size: 22px; line-height: 33px; text-align: left;}
-
-        #menu, .height-nav{height: 76.8px;}
-        #menu li a{font-size: 23px;}
-
-        .div-logo {
-            width: 384px; height: 76.8px; position: absolute !important;
-        }
-
-        .width-img{width: 57.6px;}
-    }
-
     
     .btn-more{
         width: 10vw; height: 10vw; background-color: #252525; border-radius: 10vw; cursor: pointer;
@@ -114,22 +117,23 @@
         background: black !important;
     }
 
-    .swiper-container-med {
+    .swiper-container-med, .swiper-container-small {
         width: 100%;
         height: fit-content;
         overflow: hidden;
     }
 
-    .swiper-pagination-med {
+    .swiper-pagination-med,.swiper-pagination-small {
         width: 100%;
         height: fit-content;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .swiper-pagination-med span {
+    .swiper-pagination-med span, .swiper-pagination-small span {
         background: black !important;
     }
+
     .swiper-pagination-bullet {
         width: 1.5vw!important;
         height: 1.5vw!important;
@@ -175,6 +179,33 @@
         bottom: -8vw;
     }
 
+    @media (min-width: 1920px) {
+        .font-sol-leon{font-size: 200px; line-height: 212px;}
+
+        .font-sol-frase{font-size: 38.4px; line-height: 57.6px;}.frase-italic{font-size: 48px;} .comilla{font-size: 76.8px;}
+
+        .frame-video{width: 100%; height: 864px;}
+
+        .swiper-pagination-bullet {
+            width: 28.8px !important;
+            height: 28.8px !important;
+            border-radius: 57.6px !important;
+            margin: 0 1vw 0 1vw;
+        }
+
+        .font-title{font-size: 61px;} .font-title-producto{font-size: 40px;}
+        .font-body{font-size: 25px; line-height: 35px;} .font-body-producto{font-size: 22px; line-height: 33px; text-align: left;}
+
+        #menu, .height-nav{height: 76.8px;}
+        #menu li a{font-size: 23px;}
+
+        .div-logo {
+            width: 384px; height: 76.8px; position: absolute !important;
+        }
+
+        .width-img{width: 57.6px;}
+    }
+
 
     @media (max-width: 992px) {
         #menu, .height-nav{height: 8vw !important;}
@@ -188,9 +219,10 @@
             font-size: 4.5vw !important; text-align: center;
         }
         .font-body, .font-body-producto {
-            font-size: 2.5vw !important;
+            font-size: 2.2vw !important;
             font-weight: 500 !important;
-            line-height: 3.2vw !important;
+            line-height: 3.5vw !important;
+            margin-bottom: 4vw;
         }
 
         .sol-info{
@@ -254,12 +286,19 @@
         }
 
         .font-title-producto{
-            font-size: 4vw !important; text-align: left;
+            font-size: 7vw !important; text-align: left;
         }
 
         .font-body-producto {
-            font-size: 2.3vw !important;
-            line-height: 2.8vw !important;
+            font-size: 4.6vw !important;
+            line-height: 5.5vw !important;
+            margin-bottom: 8vw;
+        }
+
+        .swiper-pagination-bullet {
+            width: 5.5vw!important;
+            height: 5.5vw!important;
+            border-radius: 5vw!important;
         }
 
         .btn-more{

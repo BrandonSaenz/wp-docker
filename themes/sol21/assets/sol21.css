@@ -15,6 +15,17 @@
         padding-top: 10%;
         line-height: 11.04vw;
     }
+    .font-sol-frase{
+        font-size: 2vw; font-family: 'Montserrat';
+        text-transform: uppercase;
+        padding-left: 19%;
+        padding-top: 6%;
+        line-height: 3vw;
+        transform: scale(1);
+    }
+
+    .comilla{font-weight: 700; font-size: 4vw;}
+
     .font-title, .font-title-producto{
         font-size: 3.2vw; font-family: 'Montserrat'; font-weight: 600; padding-top: 4%; padding-bottom: 4%;
     }
@@ -53,6 +64,20 @@
         padding-bottom: 5vw;
         width: 82%;
     }
+    
+    .icon-remove{
+        position: absolute;
+        left: 1vw;
+        top: 1vw;
+        transition: all 0.3s;
+    }
+
+    .icon-remove-90deg{
+        transform: rotate(90deg);
+    }
+
+    .up-btn{font-size: 53px !important;}
+
 
     @media (min-width: 1920px) {
         .font-sol-leon{font-size: 200px; line-height: 212px;}
@@ -69,52 +94,12 @@
         .width-img{width: 57.6px;}
     }
 
-    @media (max-width: 992px) {
-        #menu, .height-nav{height: 8vw !important;}
-        #menu li a{font-size: 23px !important;}
-        .width-img{width: 7vw !important;}
-
-        .div-logo {
-            width: 100% !important; height: 8vw !important; position: inherit !important;
-        }
-        .sol-info{
-            height: 70vw;
-            overflow: hidden;
-            margin-bottom: 15vw !important;
-            position: relative;
-        }
     
-        .info-gradient{
-            background: rgb(255,255,255);
-            width: 100%; height: 40vw; position: absolute; left: 0; bottom: 0;
-            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-        }
-    }
-
-    @media (max-width: 600px) {
-        #menu, .height-nav{height: 15vw !important;}
-        #menu li a{font-size: 23px !important;}
-        .width-img{width: 12vw !important;     margin-top: 3vw;}
-
-        .div-logo {
-            width: 100% !important; height: 12vw !important; position: inherit !important;
-        }
-        .div-btn-menu{width: 13vw; height: 15vw !important;}
-        .btn-menu{font-size: 8vw !important;}
-
-        .font-title, .font-title-producto{
-            font-size: 6.2vw !important; text-align: center;
-        }
-        .font-body, .font-body-producto {
-            font-size: 4.3vw !important;
-            font-weight: 500 !important;
-            line-height: 6.3vw !important;
-        }
-    }
-
     .btn-more{
         width: 10vw; height: 10vw; background-color: #252525; border-radius: 10vw; cursor: pointer;
-        position: absolute; bottom: -29vw !important; left: 45vw; opacity: 0.7;
+        position: absolute; left: 45vw;
+        /* bottom: -29vw !important;  */
+        bottom: 0 !important;
     }
 
     .btn-more i{
@@ -126,6 +111,23 @@
         height: fit-content;
     }
     .swiper-pagination span {
+        background: black !important;
+    }
+
+    .swiper-container-med {
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+    }
+
+    .swiper-pagination-med {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-pagination-med span {
         background: black !important;
     }
     .swiper-pagination-bullet {
@@ -149,4 +151,123 @@
 
     .labio{
         fill:#282826;
+    }
+
+    .sol-info-more{
+        height: fit-content !important;
+        overflow: inherit !important;
+        transition: all 0.3s;
+    }
+
+    .info-gradient{
+        display: none;
+        background: rgb(255,255,255);
+        width: 100%; height: 40vw; position: absolute; left: 0; bottom: 0;
+        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    }
+    .info-gradient-more{
+        display: none;
+        background: rgb(255,255,255) !important;
+        width: 100%;
+        height: 0vw;
+        position: absolute;
+        left: 0;
+        bottom: -8vw;
+    }
+
+
+    @media (max-width: 992px) {
+        #menu, .height-nav{height: 8vw !important;}
+        #menu li a{font-size: 23px !important;}
+        .width-img{width: 7vw !important;}
+
+        .div-logo {
+            width: 100% !important; height: 8vw !important; position: inherit !important;
+        }
+        .font-title, .font-title-producto{
+            font-size: 4.5vw !important; text-align: center;
+        }
+        .font-body, .font-body-producto {
+            font-size: 2.5vw !important;
+            font-weight: 500 !important;
+            line-height: 3.2vw !important;
+        }
+
+        .sol-info{
+            height: 70vw;
+            overflow: hidden;
+            margin-bottom: 15vw !important;
+            position: relative;
+            transition: all 0.3s;
+        }
+    
+        .info-gradient-more{display: block;}
+        .info-gradient{display: block;}
+        
+        .btn-more{
+            width: 8vw; height: 8vw; border-radius: 8vw; left: 47.5vw;
+            /* bottom: -29vw !important;  */
+        }
+
+        .btn-more i{
+            font-size: 6vw;
+        }
+
+        #productos {padding-top: 7vw;}
+
+        .swiper-pagination-bullet {
+            width: 3.5vw!important;
+            height: 3.5vw!important;
+            border-radius: 5vw!important;
+        }
+
+        .font-title-producto{
+            font-size: 4vw !important;
+            text-align: left;
+        }
+
+        .div-firma {
+            width: 40vw;
+            padding-top: 10vw;
+            padding-bottom: 20vw;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #menu, .height-nav{height: 15vw !important;}
+        #menu li a{font-size: 23px !important;}
+        .width-img{width: 12vw !important;     margin-top: 3vw;}
+
+        .div-logo {
+            width: 100% !important; height: 12vw !important; position: inherit !important;
+        }
+        .div-btn-menu{width: 13vw; height: 15vw !important;}
+        .btn-menu{font-size: 8vw !important;}
+
+        .font-title, .font-title-producto{
+            font-size: 6.2vw !important; text-align: center;
+        }
+        .font-body, .font-body-producto {
+            font-size: 4.3vw !important;
+            font-weight: 500 !important;
+            line-height: 6.3vw !important;
+        }
+
+        .font-title-producto{
+            font-size: 4vw !important; text-align: left;
+        }
+
+        .font-body-producto {
+            font-size: 2.3vw !important;
+            line-height: 2.8vw !important;
+        }
+
+        .btn-more{
+            width: 10vw; height: 10vw; border-radius: 10vw; left: 45vw;
+            /* bottom: -29vw !important;  */
+        }
+
+        .btn-more i{
+            font-size: 8vw;
+        }
     }

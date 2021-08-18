@@ -20,13 +20,14 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </header>
 <div class="entry-content" itemprop="mainContentOfPage">
-    <script>
+<script>
         const menu_main_menu = document.getElementById('menu-main_menu');
         menu_main_menu.classList.add('div-center');
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function(){
             M.AutoInit();
+            createBtnMore();
             createProduct();
             
             var swiper = new Swiper(".swiper-container", {
@@ -37,7 +38,63 @@
                 clickable: true,
                 },
             });
+
+            var swiper = new Swiper(".swiper-container-med", {
+                slidesPerView: 2,
+                spaceBetween: 0,
+                pagination: {
+                el: ".swiper-pagination-med",
+                clickable: true,
+                },
+            });
         });
+
+        function topPage(){
+            console.log("SCROLL TOP = 0");
+            scroll({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        function createBtnMore(){
+            var sol_info = document.getElementsByClassName('sol-info');
+            var info_gradient = document.getElementsByClassName('info-gradient');
+
+            for(var i=0; i<=sol_info.length-1; i++){
+                sol_info[i].id="sol-info-"+i;
+                info_gradient[i].id="info-gradient-"+i;
+            }
+        }
+
+        function viewMore(id){
+            var sol_info=document.getElementById('sol-info-'+id);
+            var info_gradient=document.getElementById('info-gradient-'+id);
+
+            console.log("element: "+sol_info.innerHTML);
+            sol_info.classList.add('sol-info-more');
+            info_gradient.classList.remove('info-gradient'); info_gradient.classList.add('info-gradient-more');
+
+            var elem_icon_remove=document.getElementsByClassName('elem-icon-remove');
+            elem_icon_remove[id].classList.remove('icon-remove-90deg');
+            
+            var btn_more=document.getElementsByClassName('btn-more');
+            btn_more[id].removeAttribute("onclick"); btn_more[id].setAttribute('onclick','hideInfo('+id+')');
+        }
+
+        function hideInfo(id){
+            var sol_info=document.getElementById('sol-info-'+id);
+            var info_gradient=document.getElementById('info-gradient-'+id);
+
+            sol_info.classList.remove('sol-info-more');
+            info_gradient.classList.remove('info-gradient-more'); info_gradient.classList.add('info-gradient');
+
+            var elem_icon_remove=document.getElementsByClassName('elem-icon-remove');
+            elem_icon_remove[id].classList.add('icon-remove-90deg');
+            
+            var btn_more=document.getElementsByClassName('btn-more');
+            btn_more[id].removeAttribute("onclick"); btn_more[id].setAttribute('onclick','viewMore('+id+')');
+        }
 
         function createProduct(){
             var swiper_wrapper=document.querySelector('.swiper-wrapper');
@@ -84,16 +141,30 @@
 
     </script>
     <div style="width: 100vw; max-width: 1920px; margin: auto;">
+        <div class="fixed-action-btn" onclick="topPage()">
+            <a class="btn-floating btn-large black waves-effect waves-light">
+              <i class="large material-icons up-btn">keyboard_arrow_up</i>
+            </a>
+        </div>
         <div class="row">
             <div class="col s6">
                 <h1 class="font-sol-leon">SOL<br>LEÓN</h1>
-                <img class="w100" style="padding-left: 10%;" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/cita.png?v=1628872647" alt="">
+                <h1 class="font-sol-frase">
+                    <span class="comilla" style="margin-right: -0.6vw;">“</span>
+                    <span style="font-weight: 600;">Por qué tú tambien mereces</span>
+                    <br>
+                    <span style="font-weight: 700; font-style: italic; font-size: 2.35vw;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;una figura perfecta.</span>
+                    <span class="comilla" style="margin-left: -1.1vw;">”</span>
+                </h1>
             </div>
             <img class="col s6" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/sol_leon.png?v=1628872648" alt="">
         </div>
         <div class="row px sol-info">
             <div class="info-gradient">
-                <div class="btn-more div-center"><i class="material-icons">add</i></div>
+                <div class="btn-more" onclick="viewMore(0)">
+                    <i class="material-icons icon-remove">remove</i>
+                    <i class="material-icons icon-remove elem-icon-remove icon-remove-90deg">remove</i>
+                </div>
             </div>
             <h4 class="font-title" id="biografia">BIOGRAFÍA</h4>
             <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
@@ -109,7 +180,10 @@
         </div>
         <div class="row px sol-info" style="padding-bottom: 2.5%;">
             <div class="info-gradient">
-                <div class="btn-more div-center"><i class="material-icons">add</i></div>
+                <div class="btn-more" onclick="viewMore(1)">
+                    <i class="material-icons icon-remove">remove</i>
+                    <i class="material-icons icon-remove elem-icon-remove icon-remove-90deg">remove</i>
+                </div>
             </div>
             <h4 class="font-title" id="trayectoria">TRAYECTORIA</h4>
             <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
@@ -126,7 +200,10 @@
         <img class="row w100" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/modelos.png?v=1628872648" alt="">
         <div class="row px sol-info" style="padding-bottom: 2.5%;">
             <div class="info-gradient">
-                <div class="btn-more div-center"><i class="material-icons">add</i></div>
+                <div class="btn-more" onclick="viewMore(2)">
+                    <i class="material-icons icon-remove">remove</i>
+                    <i class="material-icons icon-remove elem-icon-remove icon-remove-90deg">remove</i>
+                </div>
             </div>
             <h4 class="font-title" id="prenda_moldeo">PRENDAS DE MOLDEO</h4>
             <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
@@ -141,10 +218,15 @@
                 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <iframe class="px" style="width: 100%; height: 45vw;" src="https://www.youtube-nocookie.com/embed/l39i3-VG5Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="swiper-container row" id="productos">
+        <div class="swiper-container row hide-on-med-and-down" id="productos">
             <div class="swiper-wrapper row">
             </div>
             <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-container-med row hide-on-large-only" id="productos">
+            <div class="swiper-wrapper row">
+            </div>
+            <div class="swiper-pagination-med"></div>
         </div>
         <div class="row div-center div-firma">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.58 512">

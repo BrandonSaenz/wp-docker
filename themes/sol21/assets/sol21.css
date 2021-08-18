@@ -112,7 +112,7 @@
     .swiper-container {
         width: 100%;
         height: fit-content;
-        padding-bottom: 4vw;
+        padding-bottom: 4vw !important;
     }
     .swiper-pagination span {
         background: black !important;

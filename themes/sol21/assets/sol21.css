@@ -151,6 +151,9 @@
         stroke:#282826;
         stroke-miterlimit:10;
         stroke-width: 14px;
+        -webkit-text-stroke-color: #282826;
+        -webkit-text-stroke-width: 14px;
+        -webkit-text-fill-color: none;
     }
 
     .labio{
@@ -177,6 +180,19 @@
         position: absolute;
         left: 0;
         bottom: -8vw;
+    }
+
+    .menu-movil{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .container-sol{
+        width: 100vw;
+        max-width: 1920px;
+        margin: auto;
     }
 
     @media (min-width: 1920px) {
@@ -208,6 +224,10 @@
 
 
     @media (max-width: 992px) {
+        .container-sol{
+            margin-top: 8vw;
+        }
+        .sidenav{top: 8vw !important;}
         #menu, .height-nav{height: 8vw !important;}
         #menu li a{font-size: 23px !important;}
         .width-img{width: 7vw !important;}
@@ -266,6 +286,8 @@
     }
 
     @media (max-width: 600px) {
+        .container-sol{margin-top: 15vw;}
+        .sidenav{top: 15vw !important;}
         #menu, .height-nav{height: 15vw !important;}
         #menu li a{font-size: 23px !important;}
         .width-img{width: 12vw !important;     margin-top: 3vw;}
@@ -291,14 +313,14 @@
 
         .font-body-producto {
             font-size: 4.6vw !important;
-            line-height: 5.5vw !important;
+            line-height: 6.5vw !important;
             margin-bottom: 8vw;
         }
 
         .swiper-pagination-bullet {
             width: 5.5vw!important;
             height: 5.5vw!important;
-            border-radius: 5vw!important;
+            border-radius: 5.5vw!important;
         }
 
         .btn-more{
@@ -308,5 +330,12 @@
 
         .btn-more i{
             font-size: 8vw;
+        }
+    }
+
+    @media (max-width: 415px){
+        .font-sol-frase{padding-left: 14%; padding-top: 0%; margin-top: -2vw;}
+        .font-sol-leon {
+            padding-left: 15%;
         }
     }

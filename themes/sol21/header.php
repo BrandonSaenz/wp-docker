@@ -29,7 +29,7 @@
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu')); ?>
         </div>
     </nav>
-    <nav style="" class="hide-on-large-only" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+    <nav style="" class="hide-on-large-only menu-movil" id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <a href="#" data-target="slide-out" class="sidenav-trigger">
             <div class="div-btn-menu div-center">
                 <i class="material-icons btn-menu">menu</i>

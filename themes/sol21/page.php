@@ -213,7 +213,7 @@
         }
 
     </script>
-    <div style="width: 100vw; max-width: 1920px; margin: auto;">
+    <div class="container-sol">
         <div class="fixed-action-btn" onclick="topPage()">
             <a class="btn-floating btn-large black waves-effect waves-light">
                 <i class="large material-icons up-btn">keyboard_arrow_up</i>
@@ -291,35 +291,22 @@
                 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <iframe class="px frame-video" src="https://www.youtube-nocookie.com/embed/l39i3-VG5Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="swiper-container row hide-on-med-and-down" id="productos">
-            <div class="swiper-wrapper swiper-wrapper-large row">
-            <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+        <div id="productos">
+            <div class="swiper-container row hide-on-med-and-down">
+                <div class="swiper-wrapper swiper-wrapper-large row">
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <div class="swiper-container-med row hide-on-large-only hide-on-small-and-down" id="productos">
-            <div class="swiper-wrapper swiper-wrapper-med row">
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+            <div class="swiper-container-med row hide-on-large-only hide-on-small-and-down">
+                <div class="swiper-wrapper swiper-wrapper-med row">
+                </div>
+                <div class="swiper-pagination-med"></div>
             </div>
-            <div class="swiper-pagination-med"></div>
-        </div>
-        <div class="swiper-container-small row hide-on-med-and-up" id="productos">
-            <div class="swiper-wrapper swiper-wrapper-small row">
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
-                <div class="swiper-slide col s3 px-producto swiper-slide-active" role="group" aria-label="1 / 6" style="width: 188px;"><h6 class="font-title-producto">Producto 1</h6><p class="font-body-producto">Descripción detallada o resumida del producto extraída desde la plataforma Shopify</p><img class="w100" src="http://www.solleon21.com/wp-content/uploads/2021/08/producto_1-3.png"></div>
+            <div class="swiper-container-small row hide-on-med-and-up">
+                <div class="swiper-wrapper swiper-wrapper-small row">
+                </div>
+                <div class="swiper-pagination-small"></div>
             </div>
-            <div class="swiper-pagination-small"></div>
         </div>
         <div class="row div-center div-firma">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.58 512">

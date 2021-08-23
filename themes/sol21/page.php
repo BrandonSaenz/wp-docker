@@ -240,16 +240,25 @@
                 </div>
             </div>
             <h4 class="font-title" id="biografia">BIOGRAFÍA</h4>
-            <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
-                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
-                versions of Lorem Ipsum. Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard 
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
-                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                Aldus PageMaker including versions of Lorem Ipsum.
-                Is simply dummy text of the printing and typesetting industry. Lorem IpLetraset sheets containing Lorem Ipsum passages, and more 
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p class="font-body">
+                Sol León, es una exitosa emprendedora en el área de la moda, especialista en prendas de moldeo con reconocimiento mundial y que fundó su propia empresa, Sol Beauty and Care, en 2018.
+                <br><br>
+                Marisol López León nació en el seno de una familia trabajadora en Culiacán, Sinaloa. Desde los 7 años mostró gusto y habilidad para los negocios gracias a la mentalidad visionaria que 
+                le inculcó su padre, EPD. A los trece años, Sol León descubrió el mundo de las prendas de moldeo y se convirtió en una consumidora ávida de dichas prendas. Era tan grande su gusto 
+                que desde entonces empezó a coleccionar y usar todo tipo de fajas de distintas marcas. 
+                <br><br>
+                En el mismo año, mientras estudiaba la secundaria, Sol León tenía  una clase de corte y confección, donde aprendió a usar una máquina de coser. Fue en ese momento cuando comenzó a 
+                modificar sus propias  fajas,  siempre preguntándose ¿Por qué NO existe una faja para mujeres con mi tipo de cuerpo?. Ella siempre ha sido una mujer muy curvilínea, debido a eso nunca 
+                pudo encontrar una faja que le ajustara del todo bien a su silueta tan particular. Fue entonces  que, sin imaginar el futuro que le esperaba, siendo tan solo una adolescente comenzó la 
+                creación de su famosa faja RELOJ DE ARENA.
+                <br><br>
+                A los dieciocho años tuvo a su primera hija, Miranda; 5 años después tuvo a su segunda hija Luciana. Durante esa época Sol León, seguía trabajando en la búsqueda de cada elemento para 
+                la creación de su exclusiva línea de fajas de moldeo. En el  periodo 2016 - 2018 , Sol León viajó a Colombia para iniciar con el desarrollo de  “La faja Perfecta”. Fue a finales del 2017 
+                cuando  culminó la elaboracion de su primera faja. Apoyada y motivada por su esposo, en febrero del 2018 finalmente logró iniciar la producción y comercialización de su propia marca de 
+                prendas de moldeo llamado “Sol Beauty and Care”. En 2019 la joven empresa  despegó a nivel global.
+                <br><br>
+                Actualmente Sol León se dedica a revolucionar las prendas que su empresa realiza, creando además de fajas, innovadoras prendas de moda  con moldeo inteligente integrado.
+            </p>
         </div>
         <div class="row px sol-info" style="padding-bottom: 2.5%;">
             <div class="info-gradient">
@@ -259,16 +268,29 @@
                 </div>
             </div>
             <h4 class="font-title" id="trayectoria">TRAYECTORIA</h4>
-            <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
-                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
-                versions of Lorem Ipsum. Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard 
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
-                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                Aldus PageMaker including versions of Lorem Ipsum.
-                Is simply dummy text of the printing and typesetting industry. Lorem IpLetraset sheets containing Lorem Ipsum passages, and more 
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p class="font-body">
+                A los 29 años decidió emprender en el mundo de la moda, especializándose  en prendas de moldeo, convirtiéndose así en una reconocida creadora a nivel internacional. Su primera prenda 
+                (cinturilla de Sol Beauty and Care) se realizó en 2018.
+                <br><br>
+                Tanto fue su éxito que desde el 2018, la marca se comercializa en los 5 continentes, ha llegado a más 46 países y actualmente cuenta con 22 boutiques ubicadas en Estados Unidos de América y México.
+                <br><br><br>
+                &emsp;• En 2019, presentó su linea deportiva con gran éxito.
+                <br><br>
+                &emsp;• En 2020, presentó su línea  de Jeans, de la cual fue un éxito total.
+                <br><br>
+                &emsp;• En 2021 presentó su línea de swimwear que también fue todo un éxito.
+                <br><br>
+                &emsp;• En 2021 presentó la innovadora línea de prendas de moldeo exteriores,  iniciándola con el increíble LUXURY BOOTY que, cómo era de esperarse, se sumó a la lista de éxitos en su carrera en la 
+                industria de el moldeo.
+                <br><br><br>
+                Sol León actualmente ha posicionado a Sol Beauty and Care como una marca de lujo y moldeo. Por esta razón, las redes sociales de Sol León y Sol Beauty and Care, junto con  su equipo de influencers 
+                han llegado a 35 millones de personas (@solleon21).
+                <br><br>
+                A través del tiempo, Sol León ha desarrollado distintas prendas que se han reconocido a nivel internacional. Actualmente lleva creadas más de 100 prendas de moldeo, causando un revuelo internacional, 
+                destacando la icónica faja RELOJ DE ARENA, única faja en el mundo con 81 tallas disponibles por modelo (media pierna, rodilla, negra, beige, etc.).
+                <br><br>
+                Tal como la joven adolescente de 13 años un día lo soñó y lo creó, hoy ya  existe una faja para mujeres con su tipo de cuerpo.
+            </p>
         </div>
         <img class="row w100" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/modelos.png?v=1628872648" alt="">
         <div class="row px sol-info" style="padding-bottom: 2.5%;">

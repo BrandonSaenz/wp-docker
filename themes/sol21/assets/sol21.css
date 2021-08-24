@@ -13,7 +13,7 @@
 
     @font-face {
         font-family: Didot;
-        src: url('../Didot LT Std Bold.otf');
+        src: url('/wp-content/themes/sol21/assets/Didot LT Std Bold.otf');
     }
     .font-sol-leon{
         font-size: 10.41vw; font-family: Didot;
@@ -196,7 +196,15 @@
         margin: auto;
     }
 
+    .div-img-sol{
+        height: 50vw;
+        overflow: hidden;
+    }
+    .img-sol{margin-top: -6vw;}
+
     @media (min-width: 1920px) {
+        .div-img-sol{height: 960px;}
+        .img-sol{margin-top: -115.2px;}
         .font-sol-leon{font-size: 200px; line-height: 212px;}
 
         .font-sol-frase{font-size: 38.4px; line-height: 57.6px;}.frase-italic{font-size: 48px;} .comilla{font-size: 76.8px;}

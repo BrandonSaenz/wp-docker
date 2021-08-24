@@ -4,23 +4,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <header class="header" style="display: none;">
     <h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </header>
 <div class="entry-content" itemprop="mainContentOfPage">
-<script>
+    <script>
         const menu_main_menu = document.getElementById('menu-main_menu');
         menu_main_menu.classList.add('div-center');
     </script>
@@ -230,7 +216,9 @@
                     <span class="comilla">”</span>
                 </h1>
             </div>
-            <img class="col s6" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/sol_leon.png?v=1628872648" alt="">
+            <div class="col s6 div-img-sol">
+                <img class="img-sol" width="100%" height="auto" src="http://www.solleon21.com/wp-content/uploads/2021/08/sol.png" alt="">
+            </div>
         </div>
         <div class="row px sol-info">
             <div class="info-gradient">
@@ -283,13 +271,6 @@
                 &emsp;• En 2021 presentó la innovadora línea de prendas de moldeo exteriores,  iniciándola con el increíble LUXURY BOOTY que, cómo era de esperarse, se sumó a la lista de éxitos en su carrera en la 
                 industria de el moldeo.
                 <br><br><br>
-                Sol León actualmente ha posicionado a Sol Beauty and Care como una marca de lujo y moldeo. Por esta razón, las redes sociales de Sol León y Sol Beauty and Care, junto con  su equipo de influencers 
-                han llegado a 35 millones de personas (@solleon21).
-                <br><br>
-                A través del tiempo, Sol León ha desarrollado distintas prendas que se han reconocido a nivel internacional. Actualmente lleva creadas más de 100 prendas de moldeo, causando un revuelo internacional, 
-                destacando la icónica faja RELOJ DE ARENA, única faja en el mundo con 81 tallas disponibles por modelo (media pierna, rodilla, negra, beige, etc.).
-                <br><br>
-                Tal como la joven adolescente de 13 años un día lo soñó y lo creó, hoy ya  existe una faja para mujeres con su tipo de cuerpo.
             </p>
         </div>
         <img class="row w100" src="https://cdn.shopify.com/s/files/1/0300/5926/6141/files/modelos.png?v=1628872648" alt="">
@@ -301,16 +282,15 @@
                 </div>
             </div>
             <h4 class="font-title" id="prenda_moldeo">PRENDAS DE MOLDEO</h4>
-            <p class="font-body">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 
-                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including 
-                versions of Lorem Ipsum. Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard 
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
-                survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
-                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
-                Aldus PageMaker including versions of Lorem Ipsum.
-                Is simply dummy text of the printing and typesetting industry. Lorem IpLetraset sheets containing Lorem Ipsum passages, and more 
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p class="font-body">
+                Sol León actualmente ha posicionado a Sol Beauty and Care como una marca de lujo y moldeo. Por esta razón, las redes sociales de Sol León y Sol Beauty and Care, junto con  su equipo de influencers 
+                han llegado a 35 millones de personas (@solleon21).
+                <br><br>
+                A través del tiempo, Sol León ha desarrollado distintas prendas que se han reconocido a nivel internacional. Actualmente lleva creadas más de 100 prendas de moldeo, causando un revuelo internacional, 
+                destacando la icónica faja RELOJ DE ARENA, única faja en el mundo con 81 tallas disponibles por modelo (media pierna, rodilla, negra, beige, etc.).
+                <br><br>
+                Tal como la joven adolescente de 13 años un día lo soñó y lo creó, hoy ya  existe una faja para mujeres con su tipo de cuerpo.
+            </p>
         </div>
         <iframe class="px frame-video" src="https://www.youtube-nocookie.com/embed/l39i3-VG5Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div id="productos">
